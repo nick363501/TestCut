@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    environment {
-        JENKINSURL = sh "${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"
-    }
+    //environment {
+      def JENKINSURL = sh "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"
+    //}
     stages {
         stage ('Test')  {
           steps { 

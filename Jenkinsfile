@@ -1,15 +1,14 @@
 pipeline {
     agent any
-    environment {
-      //JENKINSURL = sh "${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"
-    }
+    //environment {
+    //    def jenkinsurl = sh ('echo "${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"')
+    //}
     stages {
         stage ('Test')  {
           steps { 
-            sh "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"
-            //echo "jenkins URL"
-            //echo "------------------"
-            //echo "${env.JENKINSURL}"
-            //echo "------------------"
+              sh "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"
+             // echo jenkinsURL = sh 'echo "${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"'
           }
-        }ß
+        }
+    }
+}

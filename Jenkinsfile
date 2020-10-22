@@ -1,4 +1,4 @@
-@Library('TestCut@master')_
+@Library('jenkinsurl@master')_
 pipeline {
     agent any
     stages {

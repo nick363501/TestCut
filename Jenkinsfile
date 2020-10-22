@@ -6,10 +6,10 @@ pipeline {
     stages {
         stage ('Test')  {
           steps { 
-            sh "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"  
-            echo "jenkins URL"
-            echo "------------------"
-            echo "${env.JENKINSURL}"
-            echo "------------------"
+            sh "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"
+            //echo "jenkins URL"
+            //echo "------------------"
+            //echo "${env.JENKINSURL}"
+            //echo "------------------"
           }
         }ß

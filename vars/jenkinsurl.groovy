@@ -4,6 +4,3 @@
         returnStdout: true
     ).trim()
 }
-    println "-----------"
-    println ${jenkinurl}
-    println "${jenkinsurl}"

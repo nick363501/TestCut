@@ -1,4 +1,4 @@
-@Library('testcut@master') _ßß
+@Library('testcut@master') _
 pipeline {
     agent any
     stages {

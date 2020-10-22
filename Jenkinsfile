@@ -1,15 +1,16 @@
+ def jenkinsurl = sh "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"
 pipeline {
     agent any
-    environment {
-      JENKINSURL = sh "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"
-    }
+   // environment {
+     
+    //}
     stages {
         stage ('Test')  {
           steps { 
            // sh "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev"  
             echo "jenkins URL"
             echo "------------------"
-            echo "${JENKINSURL}"
+            echo "${jenkinsurl}"
             echo "------------------"
           }
         }

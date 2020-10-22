@@ -4,5 +4,5 @@
         returnStdout: true
     ).trim()
     println "-----------"
-    println (jenkinurl)
-}
+    println ${jenkinurl}
+}   println "${jenkinsurl}"

@@ -7,7 +7,7 @@ pipeline {
         stage ('Test')  {
           steps { 
               JENKINSURL = sh (
-                script "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev",
+                script: "echo ${env.BUILD_URL} | rev | cut -d '/' -f3- | rev",
                 returnStatus: true
               ) == 0
               

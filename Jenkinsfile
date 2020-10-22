@@ -1,5 +1,5 @@
 libraries {
-  lib('jenkinsurl)'
+  lib('jenkinsurl')
 }
 //@Library('testcut@master')_
 pipeline {

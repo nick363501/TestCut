@@ -1,5 +1,5 @@
 //@Library('testcut@master') _ßß
-ipeline {
+pipeline {
     agent any
     stages {
         stage ('Test')  {
